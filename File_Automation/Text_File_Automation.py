@@ -10,6 +10,6 @@ with open("/Volumes/Z/T1/Lab-3-2_configuration.txt","r") as f:
 
         with open("/Volumes/Z/T1/Lab-3-2_configuration_new.txt", "a") as f2:
             f2.write(y)
-            f2.close()
+           
 
-    f.close()
+ 

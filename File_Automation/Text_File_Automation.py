@@ -3,6 +3,8 @@ file_2="/Volumes/Z/T1/Edited_file.txt"
 
 with open(file_1,'r') as f:
     for line in f.readlines():
+        if line== '\n':
+            continue
         line.strip(" ")
         x, y= line.split('#')
         print(y)

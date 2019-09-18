@@ -1,15 +1,10 @@
-with open("/Volumes/Z/T1/Lab-3-2_configuration.txt","r") as f:
+file_1="/Volumes/Z/Lab4-1.txt"
+file_2="/Volumes/Z/T1/Edited_file.txt"
 
-    line = f.readline()
-    cnt = 1
-
-    while line:
-        x, y = f.readline().split("#")
-        line = f.readline()
-        cnt += 1
-
-        with open("/Volumes/Z/T1/Lab-3-2_configuration_new.txt", "a") as f2:
-            f2.write(y)
-           
-
- 
+with open(file_1,'r') as f:
+    for line in f.readlines():
+        line.strip(" ")
+        x, y= line.split('#')
+        print(y)
+        with open(file_2,'a')as f2:
+            f2.writelines(y)

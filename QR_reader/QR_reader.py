@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 from pyzbar.pyzbar import decode
-
 from time import sleep
 
 capture = cv2.VideoCapture(1)
